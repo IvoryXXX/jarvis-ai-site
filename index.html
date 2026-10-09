@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Jarvis AI is a private, locally hosted personal assistant used by its owner."
+    />
+    <title>Jarvis AI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="brand">Jarvis AI</p>
+        <p class="tagline">A private personal assistant that runs on the owner’s own computer.</p>
+      </header>
+
+      <h1>About Jarvis AI</h1>
+      <p>
+        Jarvis AI is a <strong>personal, single-user</strong> assistant. It is not a
+        public multi-tenant cloud product. The software runs locally under the
+        owner’s control and is used for everyday personal tasks such as notes,
+        reminders, and optional Google Calendar lookups.
+      </p>
+
+      <div class="panel">
+        <p class="muted" style="margin: 0">
+          This website exists so Google OAuth branding can reference a public
+          homepage and privacy policy for the owner’s private Calendar
+          integration. It does not host Jarvis Core or user data.
+        </p>
+      </div>
+
+      <h2>Google Calendar (optional)</h2>
+      <p>
+        When enabled by the owner, Jarvis may request read-only access to Google
+        Calendar using the OAuth scope
+        <code>https://www.googleapis.com/auth/calendar.readonly</code>.
+        Jarvis does not request permission to create, edit, or delete calendar
+        events through this integration.
+      </p>
+
+      <h2>Who can use it</h2>
+      <p>
+        Access is limited to the owner’s private setup. There is no public signup
+        and no open service for arbitrary internet users.
+      </p>
+
+      <nav>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+
+      <footer>
+        <p>Jarvis AI · private personal use</p>
+      </footer>
+    </main>
+  </body>
+</html>

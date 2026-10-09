@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Privacy policy for Jarvis AI’s private Google Calendar read-only integration."
+    />
+    <title>Privacy Policy · Jarvis AI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="brand">Jarvis AI</p>
+        <p class="tagline">Privacy Policy</p>
+      </header>
+
+      <h1>Privacy Policy</h1>
+      <p class="muted">Last updated: 9 October 2026</p>
+
+      <p>
+        This policy describes how the private Jarvis AI assistant (“Jarvis”)
+        handles information when the owner connects Google Calendar. Jarvis is
+        operated by its owner for personal use and runs primarily on the owner’s
+        local machine.
+      </p>
+
+      <h2>1. What Jarvis is</h2>
+      <p>
+        Jarvis is a locally hosted personal assistant. This public website does
+        not store assistant data, calendar contents, or OAuth credentials. It
+        only provides branding and privacy information required by Google’s
+        OAuth configuration.
+      </p>
+
+      <h2>2. Google Calendar access</h2>
+      <p>
+        If the owner enables Calendar integration, Jarvis requests Google OAuth
+        access limited to:
+      </p>
+      <ul>
+        <li>
+          <code>https://www.googleapis.com/auth/calendar.readonly</code>
+          (read-only)
+        </li>
+      </ul>
+      <p>
+        With that permission, Jarvis may read calendar metadata and event details
+        needed to answer the owner’s schedule questions. The current integration
+        is designed not to create, modify, or delete Google Calendar events.
+      </p>
+
+      <h2>3. What is stored locally</h2>
+      <p>On the owner’s computer, Jarvis may store:</p>
+      <ul>
+        <li>OAuth client configuration and tokens for Google Calendar access</li>
+        <li>The selected calendar identifier</li>
+        <li>Assistant operational data used by the local installation (for example chat/session state unrelated to this website)</li>
+      </ul>
+      <p>
+        OAuth credential files are kept outside the source-code repository and
+        are protected with restricted local file permissions on Windows where
+        that protection is applied by the setup tools. Application logs are
+        written to avoid recording OAuth client secrets and tokens.
+      </p>
+
+      <h2>4. Where calendar information may appear</h2>
+      <p>
+        When the owner asks about their schedule, Jarvis retrieves event
+        information from Google’s Calendar API and may include event titles,
+        times, and related details in the answer delivered through the owner’s
+        chosen chat channel (for example Telegram). That means:
+      </p>
+      <ul>
+        <li>Google processes Calendar API requests under Google’s terms and policies</li>
+        <li>
+          Schedule answers may be sent to the messaging service the owner uses
+          to talk to Jarvis
+        </li>
+        <li>
+          This website does not receive calendar contents, tokens, or chat
+          messages
+        </li>
+      </ul>
+
+      <h2>5. What this site does not do</h2>
+      <ul>
+        <li>No advertising trackers or analytics scripts</li>
+        <li>No accounts, sign-in, or data collection forms</li>
+        <li>No hosting of OAuth secrets, tokens, or calendar data</li>
+      </ul>
+
+      <h2>6. How to revoke Google access</h2>
+      <p>The owner can revoke Calendar access at any time by:</p>
+      <ol>
+        <li>
+          Opening
+          <a href="https://myaccount.google.com/permissions"
+            >Google Account → Third-party access / Your connections to third-party apps</a>
+          and removing access for the Jarvis OAuth app; and
+        </li>
+        <li>
+          Deleting the local OAuth token files used by the Jarvis installation
+          (and disabling the local Calendar feature if desired).
+        </li>
+      </ol>
+
+      <h2>7. Contact</h2>
+      <p>
+        This is a private personal project. Questions about this policy should be
+        directed to the owner who operates the Jarvis installation and the
+        related Google Cloud OAuth project.
+      </p>
+
+      <nav>
+        <a href="index.html">Home</a>
+      </nav>
+
+      <footer>
+        <p>Jarvis AI · private personal use</p>
+      </footer>
+    </main>
+  </body>
+</html>
